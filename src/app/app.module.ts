@@ -33,10 +33,22 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { OutOfStocksComponent } from './out-of-stocks/out-of-stocks.component';
+import { ReductionLabelComponent } from './reduction-label/reduction-label.component';
+import { InStorePricingComponent } from './in-store-pricing/in-store-pricing.component';
+import { LabelOverrideComponent } from './label-override/label-override.component';
+import { PosUpdatesComponent } from './pos-updates/pos-updates.component';
+import { AriaUsersComponent } from './aria-users/aria-users.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OutOfStocksComponent,
+    ReductionLabelComponent,
+    InStorePricingComponent,
+    LabelOverrideComponent,
+    PosUpdatesComponent,
+    AriaUsersComponent
   ],
   imports: [
     BrowserModule,
