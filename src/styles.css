@@ -1,3 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/*basic pre-built theme that should be changed eventually*/
+
+@import "~bootstrap/dist/css/bootstrap.min.css";

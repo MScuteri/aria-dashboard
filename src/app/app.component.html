@@ -1,23 +1,40 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <span>
+            <img height='10%' width='10%' alt="Aria Logo" src="../assets/imgs/web_hi_res_512.png" routerLink='/'>
+        </span>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+        <span>
+          <h1>{{ title }}</h1>
+        </span>
+    </mat-toolbar-row>
+</mat-toolbar>
 <mat-sidenav-container>
     <mat-sidenav mode="side" opened>
         <ul class='nav flex-column'>
-            <button routerLink='/users'>Aria Users</button>
-            <button routerLink='/instorepricing'>In Store Pricing</button>
-            <button routerLink='/labeloverride'>Label Overrides</button>
-            <button routerLink='/outofstock'>Out of Stocks</button>
-            <button routerLink='/pos'>Point of Sale Updates</button>
-            <button routerLink='/reductionlabel'>Reduction Label</button>
+            <li class="nav-item">
+                <a routerLink='/users'>Aria Users</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink='/instorepricing'>In Store Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink='/labeloverride'>Label Overrides</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink='/outofstock'>Out of Stocks</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink='/pos'>Point of Sale Updates</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink='/reductionlabel'>Reduction Label</a>
+            </li>
         </ul>
     </mat-sidenav>
-
-    <mat-sidenav-content>
+    <mat-sidenav-content style="height: 1000px">
         <!--The content below is only a placeholder and can be replaced.-->
-        <div style="text-align:center">
-            <h1>
-                {{ title }}
-            </h1>
-            <img width="300" alt="Aria Logo" src="../assets/imgs/web_hi_res_512.png">
-        </div>
+        <router-outlet></router-outlet>
     </mat-sidenav-content>
-    <router-outlet></router-outlet>
 </mat-sidenav-container>
