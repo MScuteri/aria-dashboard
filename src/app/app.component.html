@@ -1,14 +1,16 @@
 <mat-toolbar>
-    <mat-toolbar-row>
-        <span>
-            <img height='10%' width='10%' alt="Aria Logo" src="../assets/imgs/web_hi_res_512.png" routerLink='/'>
-        </span>
-    </mat-toolbar-row>
-    <mat-toolbar-row>
-        <span>
-          <h1>{{ title }}</h1>
-        </span>
-    </mat-toolbar-row>
+    <span>
+        <mat-icon svgIcon="dehaze" color='primary'></mat-icon>
+    </span>
+    <span>
+        <img height='10%' width='10%' alt="Aria Logo" src="../assets/imgs/web_hi_res_512.png" routerLink='/'>
+    </span>
+    <span style="align-items: center"></span>
+    <span>
+        <div class="container">
+            <h1>{{ title }}</h1>
+        </div>
+    </span>
 </mat-toolbar>
 <mat-sidenav-container>
     <mat-sidenav mode="side" opened>
