@@ -39,6 +39,7 @@ import { InStorePricingComponent } from './in-store-pricing/in-store-pricing.com
 import { LabelOverrideComponent } from './label-override/label-override.component';
 import { PosUpdatesComponent } from './pos-updates/pos-updates.component';
 import { AriaUsersComponent } from './aria-users/aria-users.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { AriaUsersComponent } from './aria-users/aria-users.component';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
