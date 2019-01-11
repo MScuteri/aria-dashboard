@@ -1,30 +1,23 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-    <h1>
-        {{ title }}
-    </h1>
-    <img width="300" alt="Aria Logo" src="../assets/imgs/web_hi_res_512.png">
-</div>
-
 <mat-sidenav-container>
-    <mat-sidenav>
-        <button routerLink='/users'>Aria Users</button>
+    <mat-sidenav mode="side" opened>
+        <ul class='nav flex-column'>
+            <button routerLink='/users'>Aria Users</button>
+            <button routerLink='/instorepricing'>In Store Pricing</button>
+            <button routerLink='/labeloverride'>Label Overrides</button>
+            <button routerLink='/outofstock'>Out of Stocks</button>
+            <button routerLink='/pos'>Point of Sale Updates</button>
+            <button routerLink='/reductionlabel'>Reduction Label</button>
+        </ul>
     </mat-sidenav>
-    <mat-sidenav>
-        <button routerLink='/instorepricing'>In Store Pricing</button>
-    </mat-sidenav>
-    <mat-sidenav>
-        <button routerLink='/labeloverride'>Label Overrides</button>
-    </mat-sidenav>
-    <mat-sidenav>
-        <button routerLink='/outofstock'>Out of Stocks</button>
-    </mat-sidenav>
-    <mat-sidenav>
-        <button routerLink='/pos'>Point of Sale Updates</button>
-    </mat-sidenav>
-    <mat-sidenav>
-        <button routerLink='/reductionlabel'>Reduction Label</button>
-    </mat-sidenav>
-</mat-sidenav-container>
 
-<router-outlet></router-outlet>
+    <mat-sidenav-content>
+        <!--The content below is only a placeholder and can be replaced.-->
+        <div style="text-align:center">
+            <h1>
+                {{ title }}
+            </h1>
+            <img width="300" alt="Aria Logo" src="../assets/imgs/web_hi_res_512.png">
+        </div>
+    </mat-sidenav-content>
+    <router-outlet></router-outlet>
+</mat-sidenav-container>
