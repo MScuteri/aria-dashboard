@@ -3,26 +3,28 @@
     <h1>
         {{ title }}
     </h1>
-    <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+    <img width="300" alt="Aria Logo" src="../assets/imgs/web_hi_res_512.png">
 </div>
-<ul style='list-style-type: none'>
-    <li>
+
+<mat-sidenav-container>
+    <mat-sidenav>
         <button routerLink='/users'>Aria Users</button>
-    </li>
-    <li>
+    </mat-sidenav>
+    <mat-sidenav>
         <button routerLink='/instorepricing'>In Store Pricing</button>
-    </li>
-    <li>
+    </mat-sidenav>
+    <mat-sidenav>
         <button routerLink='/labeloverride'>Label Overrides</button>
-    </li>
-    <li>
+    </mat-sidenav>
+    <mat-sidenav>
         <button routerLink='/outofstock'>Out of Stocks</button>
-    </li>
-    <li>
+    </mat-sidenav>
+    <mat-sidenav>
         <button routerLink='/pos'>Point of Sale Updates</button>
-    </li>
-    <li>
+    </mat-sidenav>
+    <mat-sidenav>
         <button routerLink='/reductionlabel'>Reduction Label</button>
-    </li>
-</ul>
+    </mat-sidenav>
+</mat-sidenav-container>
+
 <router-outlet></router-outlet>
