@@ -41,6 +41,7 @@ import { PosUpdatesComponent } from './pos-updates/pos-updates.component';
 import { AriaUsersComponent } from './aria-users/aria-users.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -87,7 +88,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     MatSortModule,
     MatPaginatorModule,
     AppRoutingModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
