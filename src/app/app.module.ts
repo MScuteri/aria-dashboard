@@ -40,6 +40,7 @@ import { LabelOverrideComponent } from './label-override/label-override.componen
 import { PosUpdatesComponent } from './pos-updates/pos-updates.component';
 import { AriaUsersComponent } from './aria-users/aria-users.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { AppRoutingModule } from './/app-routing.module';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
