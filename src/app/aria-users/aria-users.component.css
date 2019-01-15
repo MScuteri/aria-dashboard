@@ -1,3 +1,7 @@
-.store-num {
+.container {
     display: inline-flex;
+}
+
+.dropdown {
+    padding-left: 10px;
 }
