@@ -1,15 +1,12 @@
-<div>
+<div class='container'>
     <h2>Store: </h2>
-    <div class="dropdown store-num">
-        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton">
-            121 - S/R Rochelle PK
-          </button>
-        <!-- <div class='dropdown-menu' aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item">118 - S/R Hoboken</a>
-            <a class="dropdown-item">607 - S/R Freehold</a>
-            <a class="dropdown-item">900 - Wakefern POS TEST</a>
-        </div> -->
-    </div>
+    <mat-form-field>
+        <mat-select placeholder="Select Store">
+            <mat-option *ngFor='let store of stores' [value]='store.value'>
+                {{store.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
 </div>
 <table mat-table class='table' [dataSource]='dataSource' class='mat-elevation-z8'>
     <ng-container matColumnDef='userID'>
@@ -31,100 +28,3 @@
     <tr mat-header-row *matHeaderRowDef='displayedColumns'></tr>
     <tr mat-row *matRowDef='let row; columns: displayedColumns;'></tr>
 </table>
-<!-- <tbody>
-        <tr>
-            <td>CIMRS</td>
-            <td>Matt Scuteri</td>
-            <td>
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton">
-                        ARIA COORDINATOR (FULL ACCESS)
-                    </button>
-                 <div class="dropdown-menu">
-                        <a class="dropdown-item">ARIA COORDINATOR (FULL ACCESS)</a>
-                        <a class="dropdown-item">ARIA INQUIRE</a>
-                        <a class="dropdown-item">CISD DEVELOPMENT</a>
-                        <a class="dropdown-item">KIOSK APPS</a>
-                        <a class="dropdown-item">MEMBER</a>
-                        <a class="dropdown-item">STORE DEPARTMENT MANAGER</a>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <button type="button" class="btn">
-                FULL ACCESS
-              </button>
-            </td>
-        </tr>
-        <tr>
-            <td>RTNSL</td>
-            <td>Nicholas LoPresti</td>
-            <td>
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton">
-                        ARIA COORDINATOR (FULL ACCESS)
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item">ARIA COORDINATOR (FULL ACCESS)</a>
-                        <a class="dropdown-item">ARIA INQUIRE</a>
-                        <a class="dropdown-item">CISD DEVELOPMENT</a>
-                        <a class="dropdown-item">KIOSK APPS</a>
-                        <a class="dropdown-item">MEMBER</a>
-                        <a class="dropdown-item">STORE DEPARTMENT MANAGER</a>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <button type="button" class="btn">
-                  FULL ACCESS
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>BRM2B</td>
-            <td>Michele Bechtold</td>
-            <td>
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton">
-                      ARIA INQUIRE
-                    </button>
-                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item">ARIA COORDINATOR (FULL ACCESS)</a>
-                        <a class="dropdown-item">ARIA INQUIRE</a>
-                        <a class="dropdown-item">CISD DEVELOPMENT</a>
-                        <a class="dropdown-item">KIOSK APPS</a>
-                        <a class="dropdown-item">MEMBER</a>
-                        <a class="dropdown-item">STORE DEPARTMENT MANAGER</a>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <button type="button" class="btn">
-                  FULL ACCESS
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>GGMMC</td>
-            <td>Michele M Cavalieri</td>
-            <td>
-                <div class="dropdown" dropdown>
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton">
-                      MEMBER
-                    </button>
-                      <div *dropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item">ARIA COORDINATOR (FULL ACCESS)</a>
-                        <a class="dropdown-item">ARIA INQUIRE</a>
-                        <a class="dropdown-item">CISD DEVELOPMENT</a>
-                        <a class="dropdown-item">KIOSK APPS</a>
-                        <a class="dropdown-item">MEMBER</a>
-                        <a class="dropdown-item">STORE DEPARTMENT MANAGER</a>
-                    </div>
-                </div>
-            </td>
-            <td>
-                FULL ACCESS
-            </td>
-        </tr>
-    </tbody>
-</table> -->
