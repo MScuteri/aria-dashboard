@@ -40,6 +40,9 @@ import { LabelOverrideComponent } from './label-override/label-override.componen
 import { PosUpdatesComponent } from './pos-updates/pos-updates.component';
 import { AriaUsersComponent } from './aria-users/aria-users.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { AccordionModule, AlertModule, ButtonsModule, CarouselModule, CollapseModule, DatepickerModule,
+  BsDropdownModule, ModalModule, PaginationModule, PopoverModule, ProgressbarModule, RatingModule, SortableModule,
+  TabsModule  } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -86,6 +89,20 @@ import { AppRoutingModule } from './/app-routing.module';
     MatSortModule,
     MatPaginatorModule,
     AppRoutingModule,
+    AlertModule.forRoot(),
+    AccordionModule.forRoot(),
+    ButtonsModule.forRoot(),
+    CarouselModule.forRoot(),
+    CollapseModule.forRoot(),
+    DatepickerModule.forRoot(),
+    BsDropdownModule.forRoot(),
+    ModalModule.forRoot(),
+    PaginationModule.forRoot(),
+    PopoverModule.forRoot(),
+    ProgressbarModule.forRoot(),
+    RatingModule.forRoot(),
+    SortableModule.forRoot(),
+    TabsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
