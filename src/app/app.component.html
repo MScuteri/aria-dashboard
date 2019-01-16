@@ -1,6 +1,6 @@
 <mat-toolbar>
     <span>
-        <img height='10%' width='10%' alt="Aria Logo" src="../assets/imgs/web_hi_res_512.png" routerLink='/'>
+        <img height='10%' width='10%' alt="Aria Logo" src="../assets/imgs/web_hi_res_512.png" (click)='sidenav.toggle()'>
     </span>
     <span style="align-items: center"></span>
     <span>
@@ -36,7 +36,8 @@
         </ul>
     </mat-sidenav>
     <mat-sidenav-content style="height: 1000px">
-        <!--The content below is only a placeholder and can be replaced.-->
+        <h1>Welcome Home!</h1>
+        <img alt="Aria Logo" src="../assets/imgs/web_hi_res_512.png">
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>
