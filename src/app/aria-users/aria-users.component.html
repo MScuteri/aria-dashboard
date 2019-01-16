@@ -1,13 +1,13 @@
-<mat-card class='container'>
-    <h4>Store:</h4>
-    <div class='dropdown'>
-        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<mat-card class='header'>
+    <div class='dropdown' dropdown>
+        <h4>Store:</h4>
+        <button dropdownToggle class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Select Store
     </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class='dropdown-item' *ngFor='let store of stores'>
-        {{store.viewValue}}
-      </a>
+        <div *dropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li *ngFor='let store of stores'>
+                <a class='dropdown-item'>{{store.viewValue}}</a>
+            </li>
         </div>
     </div>
 </mat-card>

@@ -1,7 +1,13 @@
+.header {
+    text-align: center;
+}
+
 .container {
     display: inline-flex;
+    width: 100%;
 }
 
 .dropdown {
     padding-left: 10px;
+    display: inline-flex;
 }
