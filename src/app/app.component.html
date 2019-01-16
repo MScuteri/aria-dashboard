@@ -1,13 +1,10 @@
 <mat-toolbar>
     <span>
-        <mat-icon svgIcon="dehaze" color='primary'></mat-icon>
-    </span>
-    <span>
         <img height='10%' width='10%' alt="Aria Logo" src="../assets/imgs/web_hi_res_512.png" routerLink='/'>
     </span>
     <span style="align-items: center"></span>
     <span>
-        <div class="container">
+        <div class="container nav-title">
             <h1>{{ title }}</h1>
         </div>
     </span>
@@ -15,6 +12,9 @@
 <mat-sidenav-container>
     <mat-sidenav mode="side" opened>
         <ul class='nav flex-column'>
+            <li class="nav-item">
+                <a routerLink='/'>Home</a>
+            </li>
             <li class="nav-item">
                 <a routerLink='/users'>User Access</a>
             </li>
