@@ -15,21 +15,19 @@ export interface Store {
 
 export class AriaUsersComponent implements OnInit {
 
-  displayedColumns = [
-    {userID: 'USER ID'},
-    {userName: 'NAME'},
-    {roles: 'ROLES'},
-    {function: 'FUNCTION'}
-  ];
-
-  // dataSource = ELEMENT_DATA;
-
   constructor() { }
 
   stores: Store[] = [
     {value: 121, viewValue: '121 - S/R Rochelle PK'},
     {value: 118, viewValue: '118 - S/R Hoboken'},
     {value: 900, viewValue: '900 - Wakefern NEW POST TEST'}
+  ];
+
+  displayedColumns = [
+    {userID: 'USER ID'},
+    {userName: 'NAME'},
+    {roles: 'ROLES'},
+    {function: 'FUNCTION'}
   ];
   ngOnInit() {
   }
