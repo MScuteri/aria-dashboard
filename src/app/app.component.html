@@ -10,10 +10,10 @@
     </span>
 </mat-toolbar>
 <mat-sidenav-container>
-    <mat-sidenav mode="side" opened>
+    <mat-sidenav #sidenav mode="side" closed>
         <ul class='nav flex-column'>
             <li class="nav-item">
-                <a routerLink='/'>Home</a>
+                <a routerLink='/home'>Home</a>
             </li>
             <li class="nav-item">
                 <a routerLink='/users'>User Access</a>
@@ -36,8 +36,6 @@
         </ul>
     </mat-sidenav>
     <mat-sidenav-content style="height: 1000px">
-        <h1>Welcome Home!</h1>
-        <img alt="Aria Logo" src="../assets/imgs/web_hi_res_512.png">
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>

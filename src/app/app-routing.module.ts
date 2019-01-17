@@ -7,6 +7,7 @@ import { LabelOverrideComponent } from './label-override/label-override.componen
 import { OutOfStocksComponent } from './out-of-stocks/out-of-stocks.component';
 import { PosUpdatesComponent } from './pos-updates/pos-updates.component';
 import { ReductionLabelComponent } from './reduction-label/reduction-label.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {path: 'users', component: AriaUsersComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'labeloverride', component: LabelOverrideComponent},
   {path: 'outofstock', component: OutOfStocksComponent},
   {path: 'pos', component: PosUpdatesComponent},
-  {path: 'reductionlabel', component: ReductionLabelComponent}
+  {path: 'reductionlabel', component: ReductionLabelComponent},
+  {path: 'home', component: HomeComponent}
 ];
 
 @NgModule({

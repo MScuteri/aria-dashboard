@@ -43,6 +43,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { AccordionModule, AlertModule, ButtonsModule, CarouselModule, CollapseModule, DatepickerModule,
   BsDropdownModule, ModalModule, PaginationModule, PopoverModule, ProgressbarModule, RatingModule, SortableModule,
   TabsModule  } from 'ngx-bootstrap';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { AccordionModule, AlertModule, ButtonsModule, CarouselModule, CollapseMo
     InStorePricingComponent,
     LabelOverrideComponent,
     PosUpdatesComponent,
-    AriaUsersComponent
+    AriaUsersComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
