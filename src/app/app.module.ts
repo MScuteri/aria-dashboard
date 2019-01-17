@@ -104,7 +104,7 @@ import { HomeComponent } from './home/home.component';
     ProgressbarModule.forRoot(),
     RatingModule.forRoot(),
     SortableModule.forRoot(),
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
